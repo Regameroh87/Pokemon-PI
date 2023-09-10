@@ -1,0 +1,169 @@
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+.container {
+  background-image:url("/Users/rodrigogamero/Desktop/PI-Pokemon-main/client/public/images/fondoForm.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.buttonBack {
+  align-self: flex-end;
+  width: 10vw;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    rgb(16, 137, 211) 0%,
+    rgb(18, 177, 209) 100%
+  );
+  color: white;
+  padding-block: 15px;
+  margin-top: 2em;
+  margin-right: 2em;
+  border-radius: 20px;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.createForm {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 90%;
+  align-items: center;
+  margin-left: 30vw;
+  margin-bottom: 10vh;
+  color: rgb(16, 137, 211);
+  justify-content: center;
+  background-color: rgb(0,0,0,0.8);
+  border-radius: 40px;
+  padding: 25px 35px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+}
+
+
+.createForm p {
+  margin: 0%;
+  padding:0%;
+  background-color: rgb(0,0,0,0);
+  color: #f05e5e;
+  align-self: flex-start;
+  font-size: 0.9em;
+  
+}
+
+.createForm .inputTypeText {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: none;
+  padding: 0.5em 0.5em;
+  border-radius: 20px;
+  margin: 0.5em;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 0.2em solid transparent;
+}
+
+.createForm .inputTypeText::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.createForm .inputTypeText::placeholder {
+  color: rgb(170, 170, 170);
+}
+
+.createForm .inputTypeText:focus {
+  outline: none;
+  border-inline: 0.3em solid #0f9fc0;
+}
+
+.createForm .inputTypeTextError {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: none;
+  padding: 0.5em 0.5em;
+  border-radius: 20px;
+  margin: 0.5em;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 0.2em solid  red;
+}
+
+.createForm .inputTypeTextError:focus {
+  outline: none;
+  border-inline: 0.2em solid red;
+}
+
+.buttonCreate {
+  display: block;
+  width: 100%;
+  height:100%;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    rgb(16, 137, 211) 0%,
+    rgb(18, 177, 209) 100%
+  );
+  color: white;
+  padding-block: 1em;
+  margin-bottom: 1.3em;
+  margin-top: 0.4em;
+  border-radius: 1.3em;
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 20px 10px -15px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonCreate:hover,
+.buttonBack:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 23px 10px -20px;
+}
+
+.buttonCreate:active,
+.buttonBack:active {
+  transform: scale(0.95);
+  box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin:0.8em 0.8em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.selectContainer select {
+  padding: 0.4em;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #45aaf2;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.selectContainer select:focus {
+    background-color: #6bb6f1;
+    outline: none;
+    border: 2px solid #ff9f43;
+    box-shadow: 0 0 5px rgba(255, 159, 67, 0.5);
+  }
+
+.selec.selectContainer option {
+    background-color: #45aaf2;
+    color: #fff;
+    font-family: "Pokemon Solid", sans-serif;
+}
+
+.selectContainer option:hover {
+    background-color: #6bb6f1;
+  }

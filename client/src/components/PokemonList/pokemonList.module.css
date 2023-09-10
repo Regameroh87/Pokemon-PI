@@ -1,0 +1,166 @@
+/* eslint-disable-next-line */
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+.container {
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+  justify-content:start;
+  
+}
+
+.card {
+  width: 8.33%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align:center;
+  justify-content: space-around;
+  transition: width 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.card:hover {
+  width: 16.66%; /* Ancho aumenta en hover */
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px; /* Cambia la sombra en hover */
+  transform: translateY(-5px); /* Eleva ligeramente la tarjeta */
+}
+
+
+.divContainer {
+  display: flex;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s linear;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.card h2 {
+  padding-top: 30px;
+  font-family: "Pokemon Solid", Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-decoration: none;
+  color: yellow; /* Color del texto amarillo */
+  text-shadow: -2px -2px 0 blue, 2px -2px 0 blue, -2px 2px 0 blue,
+    2px 2px 0 blue;
+}
+
+.types {
+  margin-top: 30px;
+  grid-column: x0 / x2;
+  grid-row: y3/y4;
+  display: flex;
+  justify-content: center;
+}
+
+.types img {
+  max-width: 80px; 
+  max-height: 80px
+}
+
+.flying {
+  background: #a1c9f0; /* Azul pastel para el tipo Volador */
+}
+
+.grass {
+  background: #a7d7c5; /* Verde pastel para el tipo Planta */
+}
+
+.electric {
+  background: #f9e79f; /* Amarillo pastel para el tipo Eléctrico */
+}
+
+.normal {
+  background: #f5cba7; /* Naranja pastel para el tipo Normal */
+}
+
+.fire {
+  background: #f5b7b1; /* Rosa pastel para el tipo Fuego */
+}
+
+.bug {
+  background: #d5e8d4; /* Verde pastel claro para el tipo Bicho */
+}
+
+.dark {
+  background: #d2b4de; /* Lila pastel para el tipo Siniestro */
+}
+
+.dragon {
+  background: #a9cce3; /* Azul pastel para el tipo Dragón */
+}
+
+.fairy {
+  background: #f7d6e0; /* Rosa pastel para el tipo Hada */
+}
+
+.water {
+  background: #a9cce3; /* Azul pastel para el tipo Agua */
+}
+
+.ground {
+  background: #e0cda9; /* Amarillo pastel para el tipo Tierra */
+}
+
+.ghost {
+  background: #d7bde2; /* Lila pastel para el tipo Fantasma */
+}
+
+.fighting {
+  background: #f1948a; /* Rojo pastel para el tipo Lucha */
+}
+
+.ice {
+  background: #a2c8c5; /* Azul pastel para el tipo Hielo */
+}
+
+.poison {
+  background: #c39bd3; /* Lila pastel para el tipo Veneno */
+}
+
+.psychic {
+  background: #d5dbdb; /* Gris pastel para el tipo Psíquico */
+}
+
+.rock {
+  background: #bdc3c7; /* Gris pastel para el tipo Roca */
+}
+
+.shadow {
+  background: #bdc3c7; /* Gris pastel para el tipo Sombra */
+}
+
+.steel {
+  background: #d5dbdb; /* Gris pastel para el tipo Acero */
+}
+
+.unknown {
+  background: #d5dbdb; /* Gris pastel para el tipo Desconocido */
+}
+
+
+@keyframes fillProgress {
+  from {
+    width: 0;
+  }
+  to {
+    background-color: #45aaf2;
+    width: 100%;
+  }
+}
+
