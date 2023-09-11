@@ -33,9 +33,9 @@ export const Nav = () => {
     }
     if (name === "order") {
       setSelectOrder(event.target.value)
-      setPokemonOrigin("all")
       if (event.target.value === "pokedex"){
         setSelectTypes("alltypes")
+        setPokemonOrigin("all")
       }
       dispatch(orderPokemon(event.target.value))
     }
