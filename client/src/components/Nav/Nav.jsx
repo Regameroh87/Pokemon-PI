@@ -20,15 +20,23 @@ export const Nav = () => {
 
     if (name === "types") {
     setSelectTypes(event.target.value)
+    setSelectOrder("pokedex")
+    setPokemonOrigin("all")
     dispatch(filtersPokemon(event.target.value))
     
     }
     if (name === "pokeapi") {
       setPokemonOrigin(event.target.value)
+      setSelectOrder("pokedex")
+      setSelectTypes("alltypes")
       dispatch(pokeOrigin(event.target.value))
     }
     if (name === "order") {
       setSelectOrder(event.target.value)
+      setPokemonOrigin("all")
+      if (event.target.value === "pokedex"){
+        setSelectTypes("alltypes")
+      }
       dispatch(orderPokemon(event.target.value))
     }
   };
@@ -54,7 +62,7 @@ export const Nav = () => {
   return (
     <nav className={Styles.nav}>
       <div className={Styles.div}>
-        <select name= "types" className={Styles.select} onChange={handlerFilters}>
+        <select name= "types" className={Styles.select} onChange={handlerFilters} value={selectTypes}>
           <option value="alltypes">All types</option>
           {types.map((type) => (
             <option key={type.name} value={type.name}>
@@ -63,13 +71,13 @@ export const Nav = () => {
           ))}
         </select>
 
-        <select name= "pokeapi" className={Styles.select} onChange={handlerFilters}>
+        <select name= "pokeapi" className={Styles.select} onChange={handlerFilters} value={pokemonOrigin}>
           <option value="All">All</option>
           <option value="Pokeapi">Pokeapi</option>
           <option value="Created">Created</option>
         </select>
 
-        <select name="order" className={Styles.select} onChange={handlerFilters}>
+        <select name="order" className={Styles.select} onChange={handlerFilters} value={selectOrder}>
           <option value="pokedex">Pokedex</option>
           <option value="ascendente">A - Z</option>
           <option value="descendente">Z - A</option>
